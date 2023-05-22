@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "versioned-options-file",
+	"version": "${version}",
+	"name": "Versioned Options File",
+	"description": "Store option files by version!",
+	"authors": [
+		"Apollo"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/versioned-options-file",
+		"sources": "https://github.com/ApolloDatapacks/versioned-options-file",
+		"issues": "https://github.com/ApolloDatapacks/versioned-options-file/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/versioned-options-file/icon.png",
+	"environment": "*",
+	"entrypoints": {},
+	"accessWidener": "versioned-options-file.accesswidener",
+	"mixins": [
+		{
+			"config": "versioned-options-file.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
