@@ -27,6 +27,6 @@ public abstract class GameOptionsMixin {
 		} catch (Exception e) {
 			throw new Exception(e);
 		}
-		((GameOptions)(Object)this).optionsFile = new File(optionsFile, MinecraftClient.getInstance().getGame().getVersion().getName()+".txt");
+		((GameOptions)(Object)this).optionsFile = new File(optionsFile, SharedConstants.getGameVersion().getName()+".txt");
 	}
 }
